@@ -12,7 +12,7 @@ from IPython.core.debugger import set_trace
 # https://machinelearningmastery.com/how-to-avoid-exploding-gradients-in-neural-networks-with-gradient-clipping/
 
 class RNN(nn.Module):
-    """Define a recurrent NN with aribtrary network shape and activation function. The output layer is a linear."""
+    """Define a recurrent NN with arbitrary network shape and activation function. The output layer is a linear."""
     def __init__(self, shape=[1, 10, 1], n_hidden_states = 10, activation_fun=nn.LeakyReLU, activation_fun_hidden=nn.Tanh):
         """Constructor
         Keyword arguments:

@@ -12,7 +12,7 @@ from lib.models.stepEKF import stepEKF as EKF
 # https://discuss.pytorch.org/t/how-to-create-mlp-model-with-arbitrary-number-of-hidden-layers/13124/6
 
 class FFNN(nn.Module):
-    """Define a FFNN with aribtrary network shape and activation function. The output layer is a linear."""
+    """Define a FFNN with arbitrary network shape and activation function. The output layer is a linear."""
     def __init__(self, shape=[1, 10, 1], activation_fun_hidden=nn.LeakyReLU, activation_fun_out=nn.Linear, bias=True ):
         """Constructor
         Keyword arguments:

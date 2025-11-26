@@ -6,7 +6,7 @@ import numpy as np
 
 
 class AENN(nn.Module):
-    """Define a deep autoencoder with aribtrary encode/decoder shape and activation function. The output layer is a linear."""
+    """Define a deep autoencoder with arbitrary encode/decoder shape and activation function. The output layer is a linear."""
     def __init__(self, shape_encoder=[1, 10, 1],  activation_fun_encoder=nn.LeakyReLU, shape_decoder=[1, 10, 1],  activation_fun_decoder=nn.LeakyReLU, activation_fun_out=nn.Linear):
         """Constructor
         Keyword arguments:

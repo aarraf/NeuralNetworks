@@ -11,7 +11,7 @@ import torch.nn.functional as F
 # https://github.com/chickenbestlover/ELM-pytorch/tree/master
 
 class ELM(nn.Module):
-    """Define a signle layer NN (SLNN) and random asigned input weights+biase"""
+    """Define a single layer NN (SLNN) and random assigned input weights+bias"""
     def __init__(self, shape=[1, 10, 1], activation_fun=torch.relu):
         """Constructor
         Keyword arguments:
